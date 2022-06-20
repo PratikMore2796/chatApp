@@ -1,0 +1,31 @@
+Steps to create application using React as frontend and Laravel as backend
+
+1) Install Laravel
+	laravel new app_name
+2) Install React
+	composer require laravel/ui
+	php artisan ui react
+3) Create Database in MySQL
+	on local host
+4) Configure Database in .env file
+	change db name and host
+5) install npm and run npm run dev
+
+6) Install React Auth
+	php artisan ui react --auth
+7) npm install
+8) npm run dev
+9) php artisan serve
+10) php artisan migrate
+11) configuration of Pusher
+	1) config/app.php (uncomment App\Providers\BroadcastServiceProvider::class)
+	2) Add BROADCAST_DRIVER = pusher
+	3) Install pusher PHP SDK (Before running the command run visual studio as administrator)
+		composer require pusher/pusher-php-server
+		-generating API key in pusher.com
+		-setting that API key in .env 
+			PUSHER_APP_ID="######"
+			PUSHER_APP_KEY="########"
+			PUSHER_APP_SECRET="########"
+			PUSHER_APP_CLUSTER="###"
+	
