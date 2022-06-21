@@ -28,4 +28,11 @@ Steps to create application using React as frontend and Laravel as backend
 			PUSHER_APP_KEY="########"
 			PUSHER_APP_SECRET="########"
 			PUSHER_APP_CLUSTER="###"
-	
+			
+	4) npm install
+12) Instal Laravel Echo that is JavaScript lib to listen events
+	- npm install --save laravel-echo pusher-js
+13)
+
+*******************************************
+Current problem link properly vue and form with chat.blade.php

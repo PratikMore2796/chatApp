@@ -1,9 +1,9 @@
-<template v-for="message in messages">
+<template v-for="message in messages" >
     <ul class="chat">
         <li class="left clearfix">
             <div class="chat-body clearfix">
                 <div class="header">
-                    <strong class="primary-font">
+                    <strong class="primary-font" >
                         {{ message.user.name }}
                     </strong>
                 </div>

@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Auth;
 | used to check if an authenticated user can listen to the channel.
 |
 */
-
 Broadcast::channel('chatwithPM', function ($user) {
     return Auth::check();
   });

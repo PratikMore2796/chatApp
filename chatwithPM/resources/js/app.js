@@ -37,7 +37,7 @@ Vue.component('chat-form', require('./components/ChatForm.vue'));
 
     created() {
         this.fetchMessages();
-        Echo.private('chat')
+        Echo.private('chatwithPM')
   .listen('MessageSent', (e) => {
     this.messages.push({
       message: e.message.message,
