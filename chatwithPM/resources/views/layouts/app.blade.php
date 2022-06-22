@@ -44,7 +44,7 @@
   .panel-body {
     overflow-y: scroll;
     height: 350px;
-    background-color: #555;
+    background-color: yellow;
   }
 
   ::-webkit-scrollbar-track {
@@ -92,6 +92,11 @@
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('chat'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('/chat') }}">{{ __('chat') }}</a>
                                 </li>
                             @endif
                         @else
