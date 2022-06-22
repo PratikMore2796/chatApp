@@ -25,26 +25,26 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: red;
+    
   }
 
   .chat li {
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dotted #B3A9A9;
-    background-color: yellow;
+    
   }
 
   .chat li .chat-body p {
     margin: 0;
     color: #777777;
-    background-color: greenyellow;
+    
   }
 
   .panel-body {
     overflow-y: scroll;
     height: 350px;
-    background-color: yellow;
+    
   }
 
   ::-webkit-scrollbar-track {

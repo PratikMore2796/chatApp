@@ -48,4 +48,8 @@ class MessageSent
     {
         return new PrivateChannel('chatwithPM');
     }
+    public function broadcastAs()
+  {
+      return 'MessageSent';
+  }
 }

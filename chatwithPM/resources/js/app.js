@@ -5,8 +5,17 @@
  */
 
 require('./bootstrap');
+require('./components/ChatMessages.vue');
+require('./components/ChatForm.vue');
+import Vue from "vue";
+import ChatMessages from "./components/ChatMessages.vue";
+import ChatForm from "./components/ChatForm.vue";
+Vue.component('chat-messages', ChatMessages);
+Vue.component('chat-form', ChatForm);
 
 window.Vue = require('vue').default;
+
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,8 +28,7 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('chat-messages', require('./components/ChatMessages.vue'));
-Vue.component('chat-form', require('./components/ChatForm.vue'));
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,7 +38,7 @@ Vue.component('chat-form', require('./components/ChatForm.vue'));
 
  const app = new Vue({
     el: '#app',
-
+    
     data: {
         messages: []
     },
