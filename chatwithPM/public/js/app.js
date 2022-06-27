@@ -34628,7 +34628,7 @@ var render = function () {
       _c(
         "button",
         {
-          staticClass: "btn btn-primary btn-sm",
+          staticClass: "btn btn-primary btn-lg",
           attrs: { id: "btn-chat" },
           on: { click: _vm.sendMessage },
         },

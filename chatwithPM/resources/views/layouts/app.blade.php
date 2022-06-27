@@ -17,15 +17,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <style>
-   
-    .chat {
+   .chat {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+    background-color: tomato; 
   }
 
   .chat li {
@@ -44,7 +43,7 @@
   .panel-body {
     overflow-y: scroll;
     height: 350px;
-    
+    background-color: silver;
   }
 
   ::-webkit-scrollbar-track {
@@ -61,6 +60,7 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #555;
   }
+   
 </style>
 <body>
     <div id="app">
